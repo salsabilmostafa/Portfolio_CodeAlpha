@@ -12,7 +12,7 @@ A fully responsive personal portfolio website showcasing my projects, skills, an
 
 ## Usage
 1. Clone or download the repository.
-2. Open the `index.html` file in your browser to view the website.
+2. Open the `page.html` file in your browser to view the website.
 3. Customize the content to reflect your personal information if needed.
 
 ## Dependencies
