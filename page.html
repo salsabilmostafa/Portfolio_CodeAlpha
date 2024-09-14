@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 >My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="interactive-background"></div>
+    <div id="particle-container"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <svg id="svg-animation" width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="none"/>
+      </svg>
+      
+    <!-- Home Section -->
+    <section id="home">
+        <h1 id="intro-text">Hi, I'm Salsabeel Alkitkat!</h1>
+        <h1 style="font-size: 200%;">Welcome to My Portfolio</h1>
+        <p>I'm passionate about</p>
+        <p> <span id="dynamic-text"></span></p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 style="font-size: 200%;">About Me</h1>
+        <p>I’m a senior Biomedical Engineering student at Cairo University with a strong passion for technology and innovation. My interests span across various fields, including web development, software engineering, and clinical engineering. I’m dedicated to leveraging my diverse skill set to create impactful solutions that bridge the gap between engineering and healthcare.</p>
+    
+        <h3 style="color:  #6f86d6;">Technical Skills:</h3>
+        <ul>
+            <li><strong>Technical Development:</strong> Python, Matlab</li>
+            <li><strong>Web Applications Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Desktop Applications Development:</strong> C, C++, PyQt</li>
+            <li><strong>Graphics:</strong> OpenGL, Blender</li>
+            <li><strong>Database Development:</strong> Database Design, Relational Databases (PostgresSQL), Flask, NoSQL (MongoDB)</li>
+            <li><strong>Operating Systems:</strong> Ubuntu Linux</li>
+            <li><strong>Version Control Systems:</strong> Git, GitHub</li>
+            <li><strong>DevOps:</strong> Cloud, AWS, Azure</li>
+            <li><strong>Embedded System Developments:</strong> Arduino IDE, Atmel, Proteus</li>
+        </ul>
+    
+        <h3 style="color:  #6f86d6;">Non-Technical Skills:</h3>
+        <ul>
+            <li><strong>Teamwork</strong></li>
+            <li><strong>Time Management</strong></li>
+            <li><strong>Presentation Skills</strong></li>
+            <li><strong>Communication Skills</strong></li>
+            <li><strong>Problem Solving Skills</strong></li>
+        </ul>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 style="font-size: 200%;">My Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Real-Time Signal Viewer</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>An advanced tool for real-time signal visualization and analysis. It supports multiple signals with features for customization, detailed zooming, and control. Generate comprehensive PDF reports, perform in-depth statistical analysis, and synchronize signals across graphs for integrated insights. Ideal for both research and practical applications, it offers a user-friendly interface for efficient signal management and reporting.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/salsabilmostafa/Signal_Viewer-Task" target="_blank">
+                 <button class="view-demo" >View Full Project</button></a>
+            </div>
+    
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Sampling Studio</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>A desktop application that illustrates signal sampling and recovery using the Nyquist-Shannon theorem. It enables sampling and reconstruction of analog signals, showing the impact of sampling rates and noise on signal accuracy. Users can work with both pre-recorded and custom signals, and observe real-time effects. Its intuitive design makes it a valuable tool for learning and applying digital signal processing principles.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/salsabilmostafa/Sampling_Studio-Task" target="_blank">
+                 <button class="view-demo" >View Full Project</button></a>
+            </div>
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Signal Equalizer</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>A Python desktop application for signal processing with four modes: Uniform Range, Musical Instruments, Animal Sounds, and ECG Signals. It allows users to load, visualize, and adjust signals using sliders, analyze them in the Fourier domain, and view detailed plots and spectrograms. With various smoothing options, it offers a streamlined and intuitive approach to mastering signal analysis and manipulation.</p>
+                    </div>
+                </div>
+                 <a href="https://github.com/salsabilmostafa/Signal_Equalizer-Task" target="_blank">
+                   <button class="view-demo" >View Full Project</button></a>
+            </div>
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>FT Image Mixer</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>A Python desktop app using PyQt5 for advanced image processing. It allows users to convert images to grayscale, resize them uniformly, and view components like Magnitude and Phase. Users can mix components and regions from multiple images, adjust brightness and contrast, and benefit from multithreading for enhanced performance. Results and interactions are logged for easy reference, making it a versatile tool for image manipulation.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/salsabilmostafa/FT_Image_Mixer-Task" target="_blank">
+                 <button class="view-demo" >View Full Project</button></a>
+            </div>
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Fingerprint Security Voice code Access</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>This Python desktop application uses voice fingerprint and spectrogram technology to identify up to 8 individuals. It operates in two modes: Security Voice Code, requiring a specific pass-code sentence for access, and Security Voice Fingerprint, granting access based on vocal match. The system calculates probabilities to determine access, ensuring secure authentication.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/salsabilmostafa/Fingerprint_Security-Voice_code-Access-Task" target="_blank">
+                 <button class="view-demo">View Full Project</button></a>
+            </div>
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3> Realtime Digital Filter Design</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>This desktop application lets users design digital filters by placing and adjusting zeros and poles on the z-plane. It features interactive z-plane plotting, frequency response visualization, and real-time signal filtering. Users can also apply and customize all-pass filters to correct phase distortions, with options to visualize and control the filtering process.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/salsabilmostafa/Realtime_Digital_Filter_Design-Task" target="_blank">
+                 <button class="view-demo">View Full Project</button></a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!-- Contact Section -->
+<section id="contact">
+    <h1 style="font-size: 200%;">Contact Me</h1>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:salsabilmostafa2003@gmail.com">salsabilmostafa2003@gmail.com</a></li>
+        <li><strong>Phone:</strong> +20 112 540 5866</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/salsabilmostafa" target="_blank">github.com/salsabilmostafa</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/salsabil-mostafa" target="_blank">linkedin.com/in/salsabil-mostafa</a></li>
+    </ul>
+</section>
+    <!-- Modal for Project Details -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h1>Project Title</h1>
+            <p>Project description goes here...</p>
+        </div>
+    </div>
+<!-- Resume Section -->
+<section id="resume">
+    <h2>My Resume</h2>
+    <p>Click the button below to download my resume.</p>
+    <a href="Salsabeel-AlKitkat-Resume.pdf" target="_blank" download class="resume-button">Download Resume</a>
+</section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <!-- JavaScript for interactive features -->
+    <script src="page.js"></script>
+</body>
+</html>
